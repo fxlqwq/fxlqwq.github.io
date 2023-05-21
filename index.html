@@ -1,75 +1,82 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>登录</title>
-  <style>
-    body {
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    h1 {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-    input[type="text"], input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-    button {
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 3px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #3e8e41;
-    }
-  </style>
+<title>登录页面</title>
+<style type="text/css">
+body {
+background-image: url('https://clubimg.club.vmall.com/data/attachment/forum/201705/26/212901hsrg5xpvwhnmrzmh.gif');
+background-size: cover;
+background-position: center;
+font-family: Arial, sans-serif;
+color: #fff;
+}
+
+	form {
+		margin-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 50px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1 {
+		margin-bottom: 50px;
+	}
+
+	input[type=text], input[type=password] {
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		border: none;
+		width: 100%;
+	}
+
+	input[type=submit] {
+		padding: 10px;
+		background-color: #4CAF50;
+		color: #000000;
+		border-radius: 5px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	input[type=submit]:hover {
+		background-color: #3e8e41;
+	}
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>登录</h1>
-    <form>
-      <label for="username">账号：</label>
-      <input type="text" id="username" name="username" required>
-      <label for="password">密码：</label>
-      <input type="password" id="password" name="password" required>
-      <button type="submit" onclick="login()">登录</button>
-    </form>
-  </div>
-  <script>
-    function login() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-      if (username === "fxl" && password === "123456") {
-        window.location.href = "https://fxlqwq.github.io/1.html";
-      } else {
-        alert("账号或密码错误！");
-      }
-    }
-  </script>
+<form method="post" action="">
+<h1>登录页面</h1>
+<label for="username">账号：</label>
+<input type="text" id="username" name="username">
+<label for="password">密码：</label>
+<input type="password" id="password" name="password">
+<input type="submit" value="登录">
+</form>
+
+<script>
+	const form = document.querySelector('form');
+	form.addEventListener('submit', function(e) {
+		e.preventDefault();
+		const username = document.getElementById('username').value;
+		const password = document.getElementById('password').value;
+
+		if (username === 'fxl' && password === '123456') {
+			window.location.href = 'http://www.baidu.com';
+		} else {
+			alert('用户名或密码错误，请重试！');
+		}
+	});
+</script>
 </body>
 </html>
