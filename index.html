@@ -1,84 +1,159 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-<title>请登录</title>
-<style type="text/css">
-body {
-background-image: url('https://clubimg.club.vmall.com/data/attachment/forum/201705/26/212901hsrg5xpvwhnmrzmh.gif');
-background-size: cover;
-background-position: center;
-font-family: Arial, sans-serif;
-color: #fff;
-}
 
-	form {
-		margin-top: 100px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		background-color: rgba(0, 0, 0, 0.8);
-		padding: 50px;
-		border-radius: 10px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-		width: 500px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	<title>请登录</title>	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	h1 {
-		margin-bottom: 50px;
-	}
+	<style type="text/css">
 
-	input[type=text], input[type=password] {
-		padding: 10px;
-		margin-bottom: 20px;
-		border-radius: 5px;
-		border: none;
-		width: 100%;
-	}
+		body {
 
-	input[type=submit] {
-		padding: 10px;
-		background-color: #4CAF50;
-		color: #000000;
-		border-radius: 5px;
-		border: none;
-		cursor: pointer;
-		width: 100%;
-		margin-bottom: 20px;
-	}
+			background-image: url('https://clubimg.club.vmall.com/data/attachment/forum/201705/26/212901hsrg5xpvwhnmrzmh.gif');
 
-	input[type=submit]:hover {
-		background-color: #3e8e41;
-	}
-</style>
-</head>
-<body>
-<form method="post" action="">
-<h1>FXL的页面</h1>
-<p>我是一个初中生</p>
-<p>提示：专业的人可以破解</p>
-<label for="username">账号：</label>
-<input type="text" id="username" name="username">
-<label for="password">密码：</label>
-<input type="password" id="password" name="password">
-<input type="submit" value="登录">
-</form>
+			background-size: cover;
 
-<script>
-	const form = document.querySelector('form');
-	form.addEventListener('submit', function(e) {
-		e.preventDefault();
-		const username = document.getElementById('username').value;
-		const password = document.getElementById('password').value;
+			background-position: center;
 
-		if (username === 'fxl' && password === '123456') {
-			window.location.href = 'http://fxlqwq.github.io/home.html';
-		} else {
-			alert('用户名或密码错误，请重试！');
+			font-family: Arial, sans-serif;
+
+			color: #fff;
+
+			margin: 0;
+
 		}
-	});
-</script>
+
+		form {
+
+			margin-top: 10%;
+
+			display: flex;
+
+			flex-direction: column;
+
+			align-items: center;
+
+			text-align: center;
+
+			background-color: rgba(0, 0, 0, 0.8);
+
+			padding: 50px;
+
+			border-radius: 10px;
+
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+			max-width: 500px;
+
+			width: 90%;
+
+			margin-left: auto;
+
+			margin-right: auto;
+
+		}
+
+		h1 {
+
+			margin-bottom: 50px;
+
+		}
+
+		input[type=text],
+
+		input[type=password] {
+
+			padding: 10px;
+
+			margin-bottom: 20px;
+
+			border-radius: 5px;
+
+			border: none;
+
+			width: 100%;
+
+		}
+
+		input[type=submit] {
+
+			padding: 10px;
+
+			background-color: #4CAF50;
+
+			color: #000000;
+
+			border-radius: 5px;
+
+			border: none;
+
+			cursor: pointer;
+
+			width: 100%;
+
+			margin-bottom: 20px;
+
+		}
+
+		input[type=submit]:hover {
+
+			background-color: #3e8e41;
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<form method="post" action="">
+
+		<h1>FXL的页面</h1>
+
+		<p>我是一个初中生</p>
+
+		<p>提示：专业的人可以破解</p>
+
+		<label for="username">账号：</label>
+
+		<input type="text" id="username" name="username">
+
+		<label for="password">密码：</label>
+
+		<input type="password" id="password" name="password">
+
+		<input type="submit" value="登录">
+
+	</form>
+
+	<script>
+
+		const form = document.querySelector('form');
+
+		form.addEventListener('submit', function (e) {
+
+			e.preventDefault();
+
+			const username = document.getElementById('username').value;
+
+			const password = document.getElementById('password').value;
+
+			if (username === 'fxl' && password === '123456') {
+
+				window.location.href = 'http://fxlqwq.github.io/home.html';
+
+			} else {
+
+				alert('用户名或密码错误，请重试！');
+
+			}
+
+		});
+
+	</script>
+
 </body>
+
 </html>
