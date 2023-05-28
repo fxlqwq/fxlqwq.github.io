@@ -5,18 +5,26 @@
     <title>网站链接集成</title>
     <style>
         body {
-            background-color: #f9f9f9;
             font-family: Arial, sans-serif;
+            background: url(http://tool.liumingye.cn/bingimg/img.php) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
         .container {
             margin: 0 auto;
             padding: 50px 20px;
             max-width: 800px;
             width: 90%;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
         }
         h1 {
             text-align: center;
             color: #333;
+            margin-bottom: 40px;
         }
         ul {
             list-style: none;
@@ -35,7 +43,7 @@
             transition: all .3s ease-in-out;
         }
         li:hover {
-            transform: translateY(-5px);
+            transform: translateY(-5px) scale(1.05);
             box-shadow: 0 4px 8px rgba(0,0,0,.2);
         }
         a {
