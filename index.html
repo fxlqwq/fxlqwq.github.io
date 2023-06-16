@@ -3,105 +3,74 @@
 <html>
 
 <head>
-	
-	<title>请登录</title>
-        <link rel="shortcut icon" href="https://fxlqwq.github.io/pictures/fxl.png">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta charset="utf-8">	<title>我是fxl</title>
 
 	<style type="text/css">
 
 		body {
 
-			background-image: url('https://fxlqwq.github.io/pictures/hk2.gif');
+			background-image: url("https://fxlqwq.github.io/pictures/hk2.gif");
 
-			background-size: cover;
-
-			background-position: center;
+			background-repeat: repeat;
 
 			font-family: Arial, sans-serif;
 
-			color: #fff;
+			font-size: 16px;
+
+			line-height: 1.5;
 
 			margin: 0;
 
+			padding: 0;
+
 		}
 
-		form {
+		header {
 
-			margin-top: 10%;
+			background-color: #333;
 
-			display: flex;
+			color: #fff;
 
-			flex-direction: column;
-
-			align-items: center;
-
-			text-align: center;
-
-			background-color: rgba(0, 0, 0, 0.8);
-
-			padding: 50px;
-
-			border-radius: 10px;
-
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-			max-width: 500px;
-
-			width: 90%;
-
-			margin-left: auto;
-
-			margin-right: auto;
+			padding: 10px;
 
 		}
 
 		h1 {
 
-			margin-bottom: 50px;
+			margin: 0;
 
 		}
 
-		input[type=text],
+		main {
 
-		input[type=password] {
+			margin: 20px auto;
 
-			padding: 10px;
+			max-width: 800px;
 
-			margin-bottom: 20px;
-
-			border-radius: 5px;
-
-			border: none;
-
-			width: 100%;
+			padding: 20px;
 
 		}
 
-		input[type=submit] {
-
-			padding: 10px;
-
-			background-color: #4CAF50;
-
-			color: #000000;
-
-			border-radius: 5px;
-
-			border: none;
-
-			cursor: pointer;
-
-			width: 100%;
+		p {
 
 			margin-bottom: 20px;
 
 		}
 
-		input[type=submit]:hover {
+		marquee {
 
-			background-color: #3e8e41;
+			color: #333;
+
+			font-size: 24px;
+
+			font-weight: bold;
+
+			margin-bottom: 20px;
+
+			padding-top: 20px;
+
+			text-align: center;
 
 		}
 
@@ -111,51 +80,19 @@
 
 <body>
 
-	<form method="post" action="">
+<header>
 
-		<h1>FXL的页面</h1>
+	<h1>我是fxl</h1>
 
-		<p>我是一个初中生</p>
+</header>
 
-		<p>提示：专业的人可以破解</p>
+<main>
 
-		<label for="username">账号：</label>
+	<marquee>你好我是fxl，这是一个工具集成网站</marquee>
 
-		<input type="text" id="username" name="username">
+	<a href="https://fxlqwq.github.io/tools.html">工具箱</a>
 
-		<label for="password">密码：</label>
-
-		<input type="password" id="password" name="password">
-
-		<input type="submit" value="登录">
-
-	</form>
-
-	<script>
-
-		const form = document.querySelector('form');
-
-		form.addEventListener('submit', function (e) {
-
-			e.preventDefault();
-
-			const username = document.getElementById('username').value;
-
-			const password = document.getElementById('password').value;
-
-			if (username === 'fxl' && password === '123456') {
-
-				window.location.href = 'http://fxlqwq.github.io/home.html';
-
-			} else {
-
-				alert('用户名或密码错误，请重试！');
-
-			}
-
-		});
-
-	</script>
+</main>
 
 </body>
 
