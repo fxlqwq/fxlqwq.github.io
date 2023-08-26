@@ -1,0 +1,1 @@
+var posts=["2023/08/26/cs/","2023/08/26/hello-world/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
